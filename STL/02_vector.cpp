@@ -101,6 +101,8 @@ int main(){
     for(int x : v){
         cout << x << endl;
     }
+
+    
     
     return 0;
 }

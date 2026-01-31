@@ -1,5 +1,6 @@
 #include <iostream>
 #include <map>
+#include <unordered_map>
 using namespace std;
 
 int main(){
@@ -25,8 +26,28 @@ int main(){
         cout << it->first << " " << it->second << endl;
     }
 
+    cout << "-----" << endl;
+    
+    // m.erase(100); // O(logn)
+    auto it = m.find(2);
+    m.erase(it);
+    
+    m.clear(); 
+    
     // range base for loop
     for(auto x: m){
+        cout << x.first << " " << x.second << endl;
+    }
+    
+    cout << "--- Unordered map ---" << endl;
+    // unordered map
+    unordered_map<int, string> mp; // not sorted but unique
+    mp[1] = "hello";
+    mp[4] = "world";
+    mp[2] = "c++";
+    mp[2] = "python";
+
+    for(auto x : mp){ 
         cout << x.first << " " << x.second << endl;
     }
     
