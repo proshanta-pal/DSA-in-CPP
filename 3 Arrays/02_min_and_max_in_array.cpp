@@ -22,12 +22,5 @@ class Solution {
     }
 };
 
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    return 0;
-}
-
 // TC: O(n)
 // Aux. Space: O(1)

@@ -18,21 +18,5 @@ class Solution {
     }
 };
 
-int main(){
-    ios::sync_with_stdio(false);
-    cin.tie(nullptr);
-
-    Solution sol;
-    vector<int> myNumbers = {10, 20, 30, 40, 50};
-    int target = 30;
-
-    int result = sol.search(myNumbers, target);
-
-    if (result != -1) cout << "Element found at index: " << result << endl;
-    else cout << "Element not found." << endl;
-    
-    return 0;
-}
-
 // TC: O(n)
 // Aux. Space: O(1)
